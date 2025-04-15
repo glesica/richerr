@@ -6,8 +6,7 @@ import (
 	"strings"
 )
 
-// New creates a new error with the given message and applies
-// the given options.
+// New creates a new error with the given message.
 func New(msg string) Error {
 	richErr := Error{
 		error: errors.New(msg),

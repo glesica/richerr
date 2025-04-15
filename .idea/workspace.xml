@@ -5,30 +5,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddfdbc1f-9f35-481a-9111-ef8204b2bce0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/richerr.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create.go" beforeDir="false" afterPath="$PROJECT_DIR$/create.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error.go" beforeDir="false" afterPath="$PROJECT_DIR$/error.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/field.go" beforeDir="false" afterPath="$PROJECT_DIR$/field.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/field_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/collect_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
   <component name="GOROOT" url="file://$USER_HOME$/.local/share/mise/installs/go/1.24.1" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2uO6YlDVWbUpu6D8HzNNbl7zGJ2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "Go Test.TestCollect in github.com/glesica/richerr.executor": "Run",
+    "Go Test.TestCollect/should_handle_a_wrapped_error in github.com/glesica/richerr.executor": "Run",
+    "Go Test.TestCollect/should_handle_joined_errors in github.com/glesica/richerr.executor": "Run",
+    "Go Test.TestCollect/should_handle_multiple_wrapped_errors in github.com/glesica/richerr.executor": "Run",
+    "Go Test.TestCollect/should_handle_nested_scopes in github.com/glesica/richerr.executor": "Run",
+    "Go Test.TestCollect/should_handle_scope_on_a_single_error in github.com/glesica/richerr.executor": "Run",
+    "Go Test.TestCollect/should_handle_scope_on_a_single_wrapped_error in github.com/glesica/richerr.executor": "Run",
+    "Go Test.TestCollect/should_handle_scope_on_joined_errors in github.com/glesica/richerr.executor": "Run",
+    "Go Test.TestCollect/should_handle_scope_on_multiple_errors in github.com/glesica/richerr.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
@@ -42,11 +65,77 @@
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
+  <component name="RunManager" selected="Go Test.TestCollect/should_handle_scope_on_joined_errors in github.com/glesica/richerr">
+    <configuration name="TestCollect/should_handle_a_wrapped_error in github.com/glesica/richerr" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="richerr" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/glesica/richerr" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestCollect\E$/^\Qshould_handle_a_wrapped_error\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCollect/should_handle_scope_on_a_single_error in github.com/glesica/richerr" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="richerr" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/glesica/richerr" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestCollect\E$/^\Qshould_handle_scope_on_a_single_error\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCollect/should_handle_scope_on_a_single_wrapped_error in github.com/glesica/richerr" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="richerr" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/glesica/richerr" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestCollect\E$/^\Qshould_handle_scope_on_a_single_wrapped_error\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCollect/should_handle_scope_on_joined_errors in github.com/glesica/richerr" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="richerr" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/glesica/richerr" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestCollect\E$/^\Qshould_handle_scope_on_joined_errors\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCollect/should_handle_scope_on_multiple_errors in github.com/glesica/richerr" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="richerr" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/glesica/richerr" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestCollect\E$/^\Qshould_handle_scope_on_multiple_errors\E$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestCollect/should_handle_scope_on_joined_errors in github.com/glesica/richerr" />
+        <item itemvalue="Go Test.TestCollect/should_handle_scope_on_a_single_wrapped_error in github.com/glesica/richerr" />
+        <item itemvalue="Go Test.TestCollect/should_handle_scope_on_multiple_errors in github.com/glesica/richerr" />
+        <item itemvalue="Go Test.TestCollect/should_handle_scope_on_a_single_error in github.com/glesica/richerr" />
+        <item itemvalue="Go Test.TestCollect/should_handle_a_wrapped_error in github.com/glesica/richerr" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-gosdk-d297c17c1fbd-57c114c3cede-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-243.25659.52" />
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-GO-243.25659.52" />
+        <option value="bundled-gosdk-d297c17c1fbd-57c114c3cede-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-243.26053.20" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-GO-243.26053.20" />
       </set>
     </attachedChunks>
   </component>
@@ -56,5 +145,12 @@
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="DlvErrorBreakpoint" />
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
