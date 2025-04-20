@@ -43,9 +43,9 @@ func GetPosts(userId string) ([]Post, error) {
 	for _, postId := range userPosts {
 		post, err := GetPost(postId)
         if err != nil {
-			return nil, richerr.Wrap(err, "failed to fetch post").
-				WithScope("GetPosts").
-                WithField("id", userId)
+		return nil, richerr.Wrap(err, "failed to fetch post").
+			WithScope("GetPosts").
+			WithField("id", userId)
         }
     }
 	
