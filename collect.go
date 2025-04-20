@@ -11,7 +11,7 @@ func Collect(err error) Fields {
 	return collect(err, "")
 }
 
-func collect(err error, scope string) Fields {
+func collect(err error, scope Scope) Fields {
 	if err == nil {
 		return nil
 	}
@@ -23,16 +23,15 @@ func collect(err error, scope string) Fields {
 	if fieldsErr, fieldsOK := err.(interface{ Fields() Fields }); fieldsOK {
 		fields = fieldsErr.Fields()
 
-		// If this level of nesting introduced new fields then
-		// it will also introduce a new scope. This way we don't
-		// add empty scopes for error wrappers (like from
-		// fmt.Errorf).
-		var nextScopeLevel string
-		if scopeErr, scopeOK := err.(interface{ Scope() string }); scopeOK {
+		// If this level of nesting introduced new fields then,
+		// and only then, it will also introduce a new scope.
+		// This way we don't add empty scopes for error wrappers,
+		// like those from fmt.Errorf.
+		var nextScopeLevel Scope
+		if scopeErr, scopeOK := err.(interface{ Scope() Scope }); scopeOK {
 			nextScopeLevel = scopeErr.Scope()
-		}
-		if nextScopeLevel == "" {
-			nextScopeLevel = err.Error()
+		} else {
+			nextScopeLevel = Scope(err.Error())
 		}
 
 		if scope == "" {
@@ -63,13 +62,13 @@ func collect(err error, scope string) Fields {
 	return fields
 }
 
-func scopeFields(fields Fields, scope string) {
+func scopeFields(fields Fields, scope Scope) {
 	if scope == "" {
 		return
 	}
 
 	for index, field := range fields {
-		field.Name = scope + "/" + field.Name
+		field.Name = string(scope) + "/" + field.Name
 		fields[index] = field
 	}
 }

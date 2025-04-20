@@ -18,7 +18,7 @@ func TestCollect(t *testing.T) {
 		wrapErr := fmt.Errorf("wrapper: %w", richErr)
 		fields := Collect(wrapErr)
 		assert.Equal(t, Fields{
-			{"richerr/foo", "bar"},
+			{"foo", "bar"},
 		}, fields)
 	})
 
@@ -28,8 +28,8 @@ func TestCollect(t *testing.T) {
 		wrapErr := fmt.Errorf("wrapper: %w", richErr1)
 		fields := Collect(wrapErr)
 		assert.Equal(t, Fields{
-			{"richerr1: richerr0/baz", "fuz"},
-			{"richerr1: richerr0/richerr0/foo", "bar"},
+			{"baz", "fuz"},
+			{"foo", "bar"},
 		}, fields)
 	})
 
@@ -39,8 +39,8 @@ func TestCollect(t *testing.T) {
 		joinErr := errors.Join(richErr0, richErr1)
 		fields := Collect(joinErr)
 		assert.Equal(t, Fields{
-			{"richerr0/foo", "bar"},
-			{"richerr1/baz", "fuz"},
+			{"foo", "bar"},
+			{"baz", "fuz"},
 		}, fields)
 	})
 

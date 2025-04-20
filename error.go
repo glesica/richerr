@@ -9,7 +9,7 @@ import (
 type Error struct {
 	error
 
-	scope  string
+	scope  Scope
 	fields Fields
 }
 
@@ -17,7 +17,7 @@ func (e Error) Unwrap() error {
 	return e.error
 }
 
-func (e Error) Scope() string {
+func (e Error) Scope() Scope {
 	return e.scope
 }
 
@@ -29,7 +29,7 @@ func (e Error) Fields() Fields {
 
 // WithScope sets the scope of this error and returns the
 // updated error.
-func (e Error) WithScope(scope string) Error {
+func (e Error) WithScope(scope Scope) Error {
 	e.scope = scope
 
 	return e
