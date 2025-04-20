@@ -60,3 +60,17 @@ func GetPost(postId string) (*Post, error) {
 		WithField("id", postId)
 }
 ```
+
+Once the error has bubbled up to the spot where you want to handle it,
+any fields introduced along the way can be recovered with the `Collect`
+function.
+
+```go
+fields := richerr.Collect(err)
+
+// fields now contains a slice of all fields added to the tree
+// of errors rooted at err
+```
+
+Field names are adjusted to include their scopes, so the return value
+from `Collect` is ready to hand of to a logger or whatever else.
