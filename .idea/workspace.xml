@@ -6,11 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ddfdbc1f-9f35-481a-9111-ef8204b2bce0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create.go" beforeDir="false" afterPath="$PROJECT_DIR$/create.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collect.go" beforeDir="false" afterPath="$PROJECT_DIR$/collect.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collect_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/collect_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/error.go" beforeDir="false" afterPath="$PROJECT_DIR$/error.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/field.go" beforeDir="false" afterPath="$PROJECT_DIR$/field.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/field_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/collect_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scope.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,33 +40,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "Go Test.TestCollect in github.com/glesica/richerr.executor": "Run",
-    "Go Test.TestCollect/should_handle_a_wrapped_error in github.com/glesica/richerr.executor": "Run",
-    "Go Test.TestCollect/should_handle_joined_errors in github.com/glesica/richerr.executor": "Run",
-    "Go Test.TestCollect/should_handle_multiple_wrapped_errors in github.com/glesica/richerr.executor": "Run",
-    "Go Test.TestCollect/should_handle_nested_scopes in github.com/glesica/richerr.executor": "Run",
-    "Go Test.TestCollect/should_handle_scope_on_a_single_error in github.com/glesica/richerr.executor": "Run",
-    "Go Test.TestCollect/should_handle_scope_on_a_single_wrapped_error in github.com/glesica/richerr.executor": "Run",
-    "Go Test.TestCollect/should_handle_scope_on_joined_errors in github.com/glesica/richerr.executor": "Run",
-    "Go Test.TestCollect/should_handle_scope_on_multiple_errors in github.com/glesica/richerr.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "last_opened_file_path": "/Users/george",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;Go Test.TestCollect in github.com/glesica/richerr.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestCollect/should_handle_a_wrapped_error in github.com/glesica/richerr.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestCollect/should_handle_joined_errors in github.com/glesica/richerr.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestCollect/should_handle_multiple_wrapped_errors in github.com/glesica/richerr.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestCollect/should_handle_nested_scopes in github.com/glesica/richerr.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestCollect/should_handle_scope_on_a_single_error in github.com/glesica/richerr.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestCollect/should_handle_scope_on_a_single_wrapped_error in github.com/glesica/richerr.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestCollect/should_handle_scope_on_joined_errors in github.com/glesica/richerr.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestCollect/should_handle_scope_on_multiple_errors in github.com/glesica/richerr.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.GoLinterPluginOnboarding&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.GoLinterPluginStorageMigration&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/george&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Go Test.TestCollect/should_handle_scope_on_joined_errors in github.com/glesica/richerr">
-    <configuration name="TestCollect/should_handle_a_wrapped_error in github.com/glesica/richerr" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RunManager" selected="Go Test.TestCollect in github.com/glesica/richerr">
+    <configuration name="TestCollect in github.com/glesica/richerr" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="richerr" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
@@ -74,10 +76,10 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestCollect\E$/^\Qshould_handle_a_wrapped_error\E$" />
+      <pattern value="^\QTestCollect\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestCollect/should_handle_scope_on_a_single_error in github.com/glesica/richerr" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCollect/should_handle_multiple_wrapped_errors in github.com/glesica/richerr" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="richerr" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
@@ -85,7 +87,7 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestCollect\E$/^\Qshould_handle_scope_on_a_single_error\E$" />
+      <pattern value="^\QTestCollect\E$/^\Qshould_handle_multiple_wrapped_errors\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestCollect/should_handle_scope_on_a_single_wrapped_error in github.com/glesica/richerr" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -123,23 +125,33 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestCollect in github.com/glesica/richerr" />
+        <item itemvalue="Go Test.TestCollect/should_handle_multiple_wrapped_errors in github.com/glesica/richerr" />
         <item itemvalue="Go Test.TestCollect/should_handle_scope_on_joined_errors in github.com/glesica/richerr" />
         <item itemvalue="Go Test.TestCollect/should_handle_scope_on_a_single_wrapped_error in github.com/glesica/richerr" />
         <item itemvalue="Go Test.TestCollect/should_handle_scope_on_multiple_errors in github.com/glesica/richerr" />
-        <item itemvalue="Go Test.TestCollect/should_handle_scope_on_a_single_error in github.com/glesica/richerr" />
-        <item itemvalue="Go Test.TestCollect/should_handle_a_wrapped_error in github.com/glesica/richerr" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-gosdk-d297c17c1fbd-57c114c3cede-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-243.26053.20" />
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-GO-243.26053.20" />
+        <option value="bundled-gosdk-3b128438d3f6-34ac7aa8f6ab-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-251.23774.430" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-GO-251.23774.430" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ddfdbc1f-9f35-481a-9111-ef8204b2bce0" name="Changes" comment="" />
+      <created>1745169620389</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745169620389</updated>
+    </task>
+    <servers />
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>

@@ -8,5 +8,5 @@ type Field struct {
 	Value any    `json:"value,required"`
 }
 
-// Fields is a slice of name-value pairs.
+// Fields is a slice of name-value fields.
 type Fields []Field

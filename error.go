@@ -9,7 +9,6 @@ import (
 type Error struct {
 	error
 
-	scope  Scope
 	fields Fields
 }
 
@@ -17,22 +16,10 @@ func (e Error) Unwrap() error {
 	return e.error
 }
 
-func (e Error) Scope() Scope {
-	return e.scope
-}
-
 // Fields returns the fields associated with this error,
 // specifically. It ignores any nested errors.
 func (e Error) Fields() Fields {
 	return slices.Clone(e.fields)
-}
-
-// WithScope sets the scope of this error and returns the
-// updated error.
-func (e Error) WithScope(scope Scope) Error {
-	e.scope = scope
-
-	return e
 }
 
 // WithField adds a single field with the given name and
