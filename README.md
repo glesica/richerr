@@ -71,6 +71,3 @@ fields := richerr.Collect(err)
 // fields now contains a slice of all fields added to the tree
 // of errors rooted at err
 ```
-
-Field names are adjusted to include their scopes, so the return value
-from `Collect` is ready to hand of to a logger or whatever else.
